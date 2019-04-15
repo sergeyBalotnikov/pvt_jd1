@@ -1,5 +1,7 @@
 package my.auto;
 
+import java.util.logging.Logger;
+
 /**
  *
  */
@@ -31,6 +33,23 @@ public class Car {
 
     public void checkGasTank() {
         System.out.println("Gas: " + gas + "L");
+    }
+
+    boolean isHandBreakOn;
+
+    Logger log = Logger.getLogger("my.auto.Car");
+
+    public void checkHandBreak() {
+        if (isHandBreakOn) {
+            if (isServiceNeeded) {
+                System.out.println("WARNING! Hand break is ON Please go to Service");
+            } else {
+                System.out.println("WARNING! Hand break is ON");
+            }
+        } else {
+            //System.out.println("Hand break is OFF");
+            log.info("do nothing");
+        }
     }
 
 }
