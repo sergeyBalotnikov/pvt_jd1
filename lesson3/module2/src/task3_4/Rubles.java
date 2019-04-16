@@ -11,7 +11,7 @@ public class Rubles {
         String s = "";
         if(rub2 == 1){
             s = "рубль";
-        } else if (rub==2&&rub==3&&rub==4){
+        } else if (rub2==2||rub2==3||rub2==4){
             s = "рубля";
         } else {
             s = "рублей";
