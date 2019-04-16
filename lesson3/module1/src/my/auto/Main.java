@@ -61,6 +61,10 @@ public class Main {
         System.out.println("bi1 & bi2=" + Integer.toBinaryString(bi1 & bi2));
         System.out.println("bi1 | bi2=" + Integer.toBinaryString(bi1 | bi2));
         System.out.println("bi1 ^ bi2=" + Integer.toBinaryString(bi1 ^ bi2));
+        System.out.println("~bi1" + ~bi1);
+        System.out.println("bi2<<1" + Integer.toBinaryString(bi2<<1));
+        System.out.println("bi2>>1" + Integer.toBinaryString(bi2>>1));
+
 
         car1.checkHandBreak(); //1
         car1.isHandBreakOn = true;
